@@ -37,7 +37,7 @@ PLACES = {
     'stavanger': ('Stavanger', 58.96997, 5.73181, 'rogaland_agder'),
     'sola': ('Solastranden', 58.88489, 5.60296, 'rogaland_agder'),
     'orre': ('Orrestranda', 58.72942, 5.5292, 'rogaland_agder'),
-    'preikestolen': ('Preikestolen', 58.98514, 6.18704, 'rogaland_agder'),
+    'preikestolen': ('Preikestolen', 58.9872, 6.1894, 'rogaland_agder'),
     'kjerag': ('Kjeragbolten', 59.03373, 6.59327, 'rogaland_agder'),
     'haugesund': ('Haugesund', 59.46825, 5.08276, 'rogaland_agder'),
     'lindesnes': ('Lindesnes fyr', 57.9825, 7.04667, 'rogaland_agder'),

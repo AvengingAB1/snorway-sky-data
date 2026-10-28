@@ -237,7 +237,7 @@ def main(argv):
     ap.add_argument('--run', help='YYYYMMDDTHH (default newest complete)')
     ap.add_argument('--box', default=','.join(map(str, DEFAULT_BOX)))
     ap.add_argument('--dlat', type=float, default=0.03)
-    ap.add_argument('--dlon', type=float, default=0.075)
+    ap.add_argument('--dlon', type=float, default=0.055)   # ~2.9 km at 61 N (North Norway: 0.075 = 2.7 km at 69 N)
     ap.add_argument('--out', default='harmonie_latest.json')
     ap.add_argument('--skip-if-run', help="exit 3 without writing if newest complete run == this id ('YYMMDD_HHMM')")
     a = ap.parse_args(argv)

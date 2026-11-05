@@ -91,6 +91,9 @@ jobs:
       - name: Fetch Locationforecast station forecasts
         if: steps.clouds.outputs.skip != 'true'
         continue-on-error: true
+        # api.met.no 503 back-offs can stretch this past the job limit and cancel the CLOUD deploy (4 Nov 2026);
+        # cap it - a cut-short fetch keeps the previous stations via the Preserve step below.
+        timeout-minutes: 22
         run: |
           (cd extract && python extract_stations_metno.py --out ../_site/stations.json) || true
           ls -lh _site
